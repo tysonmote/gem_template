@@ -5,6 +5,4 @@ desc 'Default: run specs.'
 task :default => :spec
 
 desc "Run specs"
-RSpec::Core::RakeTask.new do |t|
-
-end
+RSpec::Core::RakeTask.new
