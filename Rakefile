@@ -6,3 +6,4 @@ task :default => :spec
 
 desc "Run specs"
 RSpec::Core::RakeTask.new
+
