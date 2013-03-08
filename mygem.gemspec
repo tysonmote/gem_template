@@ -18,9 +18,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "guard"
-  s.add_development_dependency "guard-rspec"
-  s.add_development_dependency "pry"
+  s.add_development_dependency "rb-fsevent", "~> 0.9.0"
+  s.add_development_dependency "guard", "~> 1.6.0"
+  s.add_development_dependency "guard-minitest", "~> 0.5.0"
+  s.add_development_dependency "awesome_print", "~> 1.1.0"
+  s.add_development_dependency "pry", "~> 0.9.0"
   # s.add_runtime_dependency "foo"
 end
